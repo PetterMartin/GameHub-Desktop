@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/27c52b5e1c.js" crossorigin="anonymous"></script>
+</head>
+<body class="checkout-body">
+    <header class="header">
+        <nav>
+            <ul class="header-left">
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+            <div>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="signup.html" class="btn">Log In</a>
+                <a href="#"></a>
+            </div>
+        </nav>
+    </header>
+    <nav class="side-nav">
+        <a href="" class="logo" >
+            <img src="Images/Logo.svg" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i><p>Home</p></a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i><p>Social</p></a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open"></i><p>Library</p></a></li>
+            <div class="active"></div>
+        </ul>
+        <ul class="nav-settings">
+            <li><a href="#"><i class="fa-solid fa-gear"></i><p>Settings</p></a></li>
+            <li><a href="#"><i class="about"></i><p>About</p></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="checkout-header"><i class="fa-solid fa-cart-shopping"></i>Checkout Page</h1>
+
+        <div class="progress-checkout-container">
+            <div class="progress-step-container-2">
+                <div class="step-check-2"></div>
+                <span class="step-title">Cart</span>
+            </div>
+            <div class="progress-step-container-2">
+                <div class="step-check-2"></div>
+                <span class="step-title">Payment</span>
+            </div>
+            <div class="progress-step-container-2">
+                <div class="step-check-2"></div>
+                <span class="step-title">Review</span>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <h2 class="form-title">Payment Details</h2>
+            <form action="" class="checkout-form">
+                <div class="input-line">
+                    <label for="name">Name on card</label>
+                    <input type="text" name="name" id="name" placeholder="Your name and surname">
+                </div>
+                <div class="input-line">
+                    <label for="name">Card number</label>
+                    <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="input-container">
+                    <div class="input-line">
+                        <label for="name">Expiring Date</label>
+                        <input type="text" name="name" id="name" placeholder="09-21">
+                    </div>
+                    <div class="input-line">
+                        <label for="name">CVC</label>
+                        <input type="text" name="name" id="name" placeholder="***">
+                    </div>
+                </div>
+                <a href="/review.html"><input type="button" value="Complete purchase"></a>
+            </form>
+        </div>
+
+
+    </main>
+    
+</body>
+</html>
