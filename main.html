@@ -4,48 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/27c52b5e1c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <ul class="header-left">
-                <li><a href="#">Genres</a></li>
-                <li><a href="#">Wishlist</a></li>
-            </ul>
-            <div>
-                <a href="#"><i class="fa-solid fa-bell"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="signup.html" class="btn">Log In</a>
-                <a href="#"></a>
-            </div>
-        </nav>
-    </header>
     <nav class="side-nav">
-        <a href="" class="logo" >
+        <a href="main.html" class="logo" >
             <img src="Images/Logo.svg" class="logo-img">
         </a>
         <ul class="nav-links">
-            <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i><p>Home</p></a></li>
             <li><a href="#"><i class="fa-solid fa-users"></i><p>Social</p></a></li>
             <li><a href="#"><i class="fa-solid fa-book-open"></i><p>Library</p></a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i><p>Settings</p></a></li>
             <div class="active"></div>
         </ul>
-        <ul class="nav-settings">
-            <li><a href="#"><i class="fa-solid fa-gear"></i><p>Settings</p></a></li>
-            <li><a href="#"><i class="about"></i><p>About</p></a></li>
-        </ul>
     </nav>
-    <main class="main">
-        <div class="content">
-            <h1 class="anim">Witcher 3: <br>Wild Hunt</h1>
-            <p class="anim">The Witcher: Wild Hunt is a story-driven open world RPG set in a visually stunning fantasy universe full of meaningful choices and impactful consequences. </p>
-            <p class="anim">In The Witcher, you play as professional monster hunter Geralt of Rivia tasked with finding a child of prophecy in a vast open world rich with merchant cities, pirate islands, dangerous mountain passes, and forgotten caverns to explore.</p>
-            <a href="checkout.html" class="btn anim">Add to cart</a>
-        </div>
-        <img src="Images/Geralt.svg" class="feature-img anim">
-    </main>   
+    <div class="content-wrapper">
+        <header class="header">
+            <nav>
+                <ul class="header-left">
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+                <div>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="signup.html" class="btn">Log In</a>
+                    <a href="#"></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <div class="main-content">
+                    <h3>MODERN WARFARE II</h3>
+                    <br>
+                    <span> THE ULTIMATE WEAPON IS TEAM.</span>
+                    <p>Squad up and fight alongside the iconic operators of Task Force 141 <br> with the return of Modern Warfare®.</p>
+                    <a href="#" class="btn-main">Shop Now</a>
+                </div>
+                <div class="video-container">
+                    <video src="Videos/Shoot House Map   Call of Duty Modern Warfare II.mp4" loop autoplay muted></video>
+                </div>
+            </section>
+            <div class="genres-header">
+                <h1 class="genres-header-text">Genres</h1>
+            </div>
+            <section class="genres">
+                <div class="icons action-icon">
+                    <div class="info">
+                        <h3>Action</h3>
+                    </div>
+                </div>
+
+                <div class="icons strategy-icon">
+                    <div class="info">
+                        <h3>Strategy</h3>
+                    </div>
+                </div>
+
+                <div class="icons rpg-icon">
+                    <div class="info">
+                        <h3>RPG</h3>
+                    </div>
+                </div>
+
+                <div class="icons racing-icon">
+                    <div class="info">
+                        <h3>Racing</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="products" id="products">
+                <h1 class="heading"> Popular Games</h1>
+                <div class="gallery">
+                    <div class="box-container">
+                        <img class="box-image" src="Images/simon-ghost-riley-mw2.jpeg" alt="">
+                        <h3 class="game-title">Modern Warfare II</h3>
+                        <h6><em>699.99 NOK</em></h6>
+                        <button class="buy">Game Page</button>
+                    </div>
+    
+                    <div class="box-container middle-box">
+                        <img class="box-image" src="Images/Witcher_3_cover_art.jpeg" alt="">
+                        <h3 class="game-title">Witcher 3</h3>
+                        <h6><em>299.99 NOK</em></h6>
+                        <a href="product.html">
+                            <button class="buy">Game Page</button>
+                        </a>
+                    </div>
+    
+                    <div class="box-container">
+                        <img class="box-image" src="Images/Burnout-paradise.jpeg" alt="">
+                        <h3 class="game-title">Burnout Paradise</h3>
+                        <h6><em>199.99 NOK</em></h6>
+                        <button class="buy">Game Page</button>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+
+    </div>
+    
 </body>
 </html>
