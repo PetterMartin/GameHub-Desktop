@@ -156,7 +156,7 @@ header nav ul li a {
     color: #fff;
     margin-right: 20px;
     display: inline-block;
-    padding: 14px 60px;
+    padding: 14px 40px;
     background-image: linear-gradient(45deg, #82e736,#305e0a);
     font-size: 14px;
     border-radius: 3rem;
@@ -847,10 +847,15 @@ input[type="button"]:hover{
     background-color: rgb(5, 134, 31);
 }
 
-@media only screen and (max-width: 1325px) {
+@media only screen and (max-width: 1402px) {
     .header {
         display: none;
     }
+
+    .video-container {
+        display: none;
+    }
+
 }
 
 
