@@ -6,6 +6,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Side-Nav */
+
+.content-wrapper {
+    width: 100%;
+    padding-left: 5%;
+}
+
 .side-nav {
     width: 140px;
     height: 100vh;
@@ -20,11 +27,11 @@
 
 .logo {
     display: flex;
+    margin-top: 15px;
     margin-bottom: 196px;
 }
 .logo-img {
-    width: 120px;
-    height: 115px;
+    width: 100%;
 }
 
 .nav-links {
@@ -101,30 +108,9 @@
     --side-nav-width: 140px;
 }
 
-@media only screen and (max-width: 600px) {
-    .side-nav {
-        width: 80px;
-    }
-    .logo-img {
-        display: none;
-    }
-    .nav-links li a p {
-        display: none;
-    }
-    .nav-links li a i {
-        margin-right: 0;
-    }
-    .nav-links li a {
-        justify-content: center;
-    }
-}
 
 
-
-
-
-
-
+/* Header */
 
 
 
@@ -151,6 +137,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 75%;
 }
 header nav ul li {
     display: inline-block;
@@ -169,7 +156,7 @@ header nav ul li a {
     color: #fff;
     margin-right: 20px;
     display: inline-block;
-    padding: 14px 40px;
+    padding: 14px 60px;
     background-image: linear-gradient(45deg, #82e736,#305e0a);
     font-size: 14px;
     border-radius: 3rem;
@@ -188,10 +175,249 @@ header nav ul li a {
     margin-right: 50px;
 }
 
+/* main.html */
+
+
+.home {
+    padding: 1rem 5% 5rem;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Images/mw2-again.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .main-content h3{
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 1rem;
+}
+
+.home .main-content span{
+    font-size: 2rem;
+    font-family:  'Syne Mono', monospace;
+    color: #fff;
+    padding: 1rem ;
+    line-height: 1.5;
+}
+
+.home .main-content p{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem ;
+    line-height: 1.5;
+    
+}
+
+.btn-main {
+    color: #fff;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0.9rem 9rem;
+    background-image: linear-gradient(45deg, #82e736,#305e0a);
+    font-size: 20px;
+    border-radius: 5rem;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.btn-main:hover {
+    background: #fff;
+    color: #82e736;
+}
+
+.video-container {
+    padding: 10px;
+    margin-top: 300px;
+    margin-left: 20px;
+    flex: 1 1 10rem;
+    position: relative;
+    max-width: 900px;
+}
+.video-container video {
+    width: 100%;
+    border: .1rem solid #82e736;
+}
+
+.genres-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: .2rem solid #82e736;
+    color: #fff;
+    background-color: #000000;
+opacity: 1;
+background-image: radial-gradient(#c7c7c7 0.65px, #121212 0.65px);
+background-size: 13px 13px;
+    padding: 1rem 1rem 0;
+}
+
+
+.genres {
+    background-color: #000000;
+opacity: 1;
+background-image: radial-gradient(#c7c7c7 0.65px, #121212 0.65px);
+background-size: 13px 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-right: 2%;
+    padding-left: 6%;
+}
+
+.genres .icons {
+    color: #fff;
+    border: .1rem solid #82e736;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-radius: 15px;
+}
+.action-icon {
+    background-image: url(Images/Crysis\ 2.jpeg) ;
+    background-size: cover;
+    background-position: 50%;
+
+}
+.action-icon h3 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 15%;
+}
+
+.strategy-icon {
+    background-image: url(Images/Strategy.webp);
+    background-size: cover;
+    background-position: 20%;
+}
+.strategy-icon h3 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 15%;
+}
+
+.rpg-icon {
+    background-image: url(Images/RPG.jpeg);
+    background-size: cover;
+    background-position: 25%;
+}
+.rpg-icon h3 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 15%;
+}
+
+.racing-icon {
+    background-image: url(Images/racing.jpeg);
+    background-size: cover;
+    background-position: 50%;
+}
+.racing-icon h3 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 15%;
+}
 
 
 
 
+
+
+
+.heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: .2rem solid #6f6f6f;
+    color: #fff;
+    background-color: rgb(29, 29, 29);
+    padding: 1rem 1rem 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+
+.game-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+}
+
+.box-container {
+    background: linear-gradient(45deg, #3a3a3a,#1f1f1f);
+    color: #fff;
+    width: 20%;
+    margin: 30px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 1),
+    0 10px 10px rgb(29, 29, 29);
+}
+
+
+.box-image {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border: .2rem solid rgb(0, 186, 0);
+    border-radius: 10px;
+}
+
+h6 {
+    font-size: 16px;
+    text-align: center;
+    color: #c8c8c8;
+    margin-bottom: 10px;
+}
+
+.middle-box {
+    margin: 0 10%;
+}
+
+.buy {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #66c51d;
+    transition: .5s;
+}
+.buy:hover {
+    color:#82e736;
+    background-color: #fff;
+}
+
+
+/* Product.html */
 
 
 
@@ -208,12 +434,14 @@ header nav ul li a {
 }
 
 .content {
-    margin-top: 7%;
-    margin-left: 17%;
+    margin-top: 5%;
+    margin-left: 15%;
     max-width: 600px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     padding: 15px;
     border-radius: 25px;
+    border: .1rem solid #66c51d;
+
 }
 .content h1 {
     font-size: 70px;
@@ -266,21 +494,7 @@ header nav ul li a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Signup.html */
 
 
 
@@ -288,7 +502,7 @@ header nav ul li a {
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: #3d3737;
+    background: #2f2f2f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,7 +525,7 @@ header nav ul li a {
 .left-box {
     padding: 50px;
     border-radius: 25px 0 0 25px;
-    background-color: #6b00d5;
+    background-color: #801caa;
     flex-basis: 50%;
     flex-grow: 1;
     color: #fff;
@@ -398,7 +612,7 @@ input[type=checkbox] {
 
 
 
-
+/* cart.html  payment.html  review.html */
 
 
 
@@ -551,25 +765,6 @@ input[type=checkbox] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .form-container{
     width: 60%;
     margin-top: 4rem;
@@ -606,7 +801,7 @@ input[type=checkbox] {
 
 label{
     font-size: 16px;
-    color: grey;
+    color: rgb(90, 90, 90);
     margin-bottom: 0.5rem;
 }
 
@@ -652,269 +847,121 @@ input[type="button"]:hover{
     background-color: rgb(5, 134, 31);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.content-wrapper {
-    width: calc(100% - var(--side-nav-width));
-    margin-left: calc(var(--side-nav-width) - 1px);
-  }
-
-.home {
-    padding: 1rem 5% 5rem;
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(Images/mw2-again.jpeg);
-    background-size: cover;
-    background-position: center;
+@media only screen and (max-width: 1325px) {
+    .header {
+        display: none;
+    }
 }
 
-.home .main-content h3{
-    font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-}
 
-.home .main-content span{
-    font-size: 2rem;
-    font-family:  'Syne Mono', monospace;
-    color: #fff;
-    padding: 1rem 0;
-    line-height: 1.5;
-}
-
-.home .main-content p{
-    font-size: 1.2rem;
-    color: #fff;
-    padding: 1rem 0;
-    line-height: 1.5;
+@media only screen and (max-width: 800px) {
+    .side-nav {
+        width: 80px;
+        height: 100%;
+        margin-right: 100%;
+    }
     
-}
+    .nav-links li a p {
+        display: none;
+    }
+    .nav-links li a i {
+        margin-right: 0;
+    }
+    .nav-links li a {
+        justify-content: center;
+    }
 
-.btn-main {
-    color: #fff;
+    .header {
+        display: none;
+    }
 
-    display: inline-block;
-    margin-top: 50px;
-    padding: 0.9rem 9rem;
-    background-image: linear-gradient(45deg, #82e736,#305e0a);
-    font-size: 20px;
-    border-radius: 5rem;
-    border-top-right-radius: 0;
-    transition: 0.5s;
-}
+    /* index.html */
 
-.btn-main:hover {
-    background: #fff;
-    color: #82e736;
-}
+    .home {
+        width: 100%;
+        overflow-x: hidden;
+    }
 
-.video-container {
-    padding: 10px;
-    margin-top: 300px;
-    margin-left: 20px;
-    flex: 1 1 10rem;
-    position: relative;
-    max-width: 900px;
-}
-.video-container video {
-    width: 100%;
-    border: .1rem solid #82e736;
-}
+    .home .main-content h3{
+        font-size: 30px;
+        padding-left: 20%;
+    }
+    
+    .home .main-content span{
+        font-size: 16px;
+        padding-left: 20%;
+    }
+    
+    .home .main-content p{
+        font-size: 12px; 
+        padding-left: 20%;    
+    }
+    
+    .video-container {
+        display: none;
+    }
 
-.genres-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: .2rem solid #82e736;
-    color: #fff;
-    background-color: #000000;
-opacity: 1;
-background-image: radial-gradient(#c7c7c7 0.65px, #121212 0.65px);
-background-size: 13px 13px;
-    padding: 1rem 1rem 0;
-}
+    .box-container {
+        width: 100%;
+        margin-left: 25%;
+    }
 
+    .genres {
+        padding-right: 20px;
+        padding-left: 12%;
+    }
 
-.genres {
-    background-color: #000000;
-opacity: 1;
-background-image: radial-gradient(#c7c7c7 0.65px, #121212 0.65px);
-background-size: 13px 13px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    padding-right: 10px;
-    padding-left: 10px;
-}
+    .btn-main {
+        margin-top: 80px;
+        margin-left: 20%;
+        padding: 0.9rem 2rem;
+        background-image: linear-gradient(45deg, #82e736,#305e0a);
+        font-size: 20px;
+        border-radius: 5rem;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+    }
 
-.genres .icons {
-    color: #fff;
-    border: .1rem solid #82e736;
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-    flex: 1;
-    border-radius: 15px;
-}
-.action-icon {
-    background-image: url(Images/Crysis\ 2.jpeg) ;
-    background-size: cover;
-    background-position: 50%;
+    /* product.html */
+    .feature-img {
+        display: none;
+    }
+    .content {
+        padding: 10px;
+        margin-left: 27%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
 
-}
-.action-icon h3 {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    border-radius: 15%;
-}
+    .content h1 {
+        font-size: 24px;
+        color: #fff;
+        padding: 10%;
+    }
+    .content p {
+        font-size: 14px;
+        padding: 10%;
+    }
 
-.strategy-icon {
-    background-image: url(Images/Strategy.webp);
-    background-size: cover;
-    background-position: 50%;
-}
-.strategy-icon h3 {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    border-radius: 15%;
-}
+    .content .btn {
+        padding: 10px 40px;
+        font-size: 16px;
+        animation-delay: 1s;
+    }
 
-.rpg-icon {
-    background-image: url(Images/RPG.jpeg);
-    background-size: cover;
-    background-position: 50%;
-}
-.rpg-icon h3 {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    border-radius: 15%;
-}
-
-.racing-icon {
-    background-image: url(Images/racing.jpeg);
-    background-size: cover;
-    background-position: 50%;
-}
-.racing-icon h3 {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    border-radius: 15%;
-}
+    /* cart.html */
+    .checkout-header {
+        display: none;
+    }
+    .progress-checkout-container{
+       display: none;
+    }
+    .form-container{
+        margin-left: 35% ;
+        padding-right: 20px;
+    }
 
 
 
 
-
-
-
-.heading {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: .2rem solid #6f6f6f;
-    color: #fff;
-    background-color: rgb(29, 29, 29);
-    padding: 1rem 1rem 0;
-    font-family: 'Mukta', sans-serif;
-}
-
-
-
-.game-title {
-    text-align: center;
-    font-size: 30px;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(29, 29, 29);
-}
-
-.box-container {
-    background: linear-gradient(45deg, #7a7a7a,#1f1f1f);
-    color: #fff;
-    width: 20%;
-    margin: 30px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 20px;
-    padding-top: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 1),
-    0 10px 10px rgb(29, 29, 29);
-}
-
-
-.box-image {
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    border: .2rem solid rgb(0, 186, 0);
-    border-radius: 10px;
-}
-
-h6 {
-    font-size: 16px;
-    text-align: center;
-    color: #c8c8c8;
-    margin-bottom: 10px;
-}
-
-.middle-box {
-    margin: 0 10%;
-}
-
-.buy {
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
-    width: 100%;
-    padding: 15px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: #66c51d;
-    transition: .5s;
-}
-.buy:hover {
-    color:#82e736;
-    background-color: #fff;
 }
